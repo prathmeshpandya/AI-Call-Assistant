@@ -1,0 +1,37 @@
+# Large model files - re-download with scripts\download-models.ps1 and scripts\setup-llm.ps1
+models/
+llm/
+*.gguf
+*.onnx
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+backend/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Logs, recordings, OS/editor noise
+*.log
+recordings/
+.DS_Store
+Thumbs.db
+.idea/
+
+# Local tooling / test output
+.claude/
+e2e_assistant_reply.wav
+*.wav
+backend_run.log
